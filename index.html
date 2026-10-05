@@ -89,7 +89,7 @@
       <li><strong>Advertising information</strong> processed by Google when ads are requested or shown (section 8).</li>
       <li><strong>A notification token</strong>, only if you allow notifications.</li>
       <li><strong>Device integrity signals</strong> from Firebase App Check (Google Play Integrity), which confirm requests come from the genuine app on a real device.</li>
-      <li><strong>Technical and diagnostic information</strong>, only if diagnostics are switched on. They are off by default (section 9).</li>
+      <li><strong>Crash reports</strong> through Firebase Crashlytics (error, app version and basic device details), always on, and other diagnostics only if they are switched on (section 9).</li>
     </ul>
     <p>The app does not ask for your contacts, precise location, photos, camera or microphone, and it never asks for the password of any game account.</p>
   </section>
@@ -144,6 +144,7 @@
       <li><strong>Firebase App Check:</strong> helps confirm requests come from the genuine app on a genuine device, using Google Play Integrity.</li>
       <li><strong>Firebase Remote Config:</strong> switches features on or off and holds display settings.</li>
       <li><strong>Firebase Cloud Messaging:</strong> delivers updates about your reward requests, only after you allow notifications.</li>
+      <li><strong>Firebase Crashlytics:</strong> crash reports, always on.</li>
       <li><strong>Google Sign-In:</strong> if you choose to sign in with Google.</li>
     </ul>
     <p>Google processes this data on our behalf and may store it on servers in other countries.</p>
@@ -165,7 +166,8 @@
 
   <section id="diagnostics">
     <h2>9. Analytics and diagnostics</h2>
-    <p>The app includes Firebase Analytics, Crashlytics and Performance Monitoring, but ships with all three switched off. They collect data only if the diagnostics preference on your device is turned on. This version of the app does not show a control to turn it on, so these tools are not collecting data. If that changes, they are meant to record app events and crash information, not your name or email.</p>
+    <p><strong>Crash reports are always on.</strong> When the app crashes or hits an unexpected error, Firebase Crashlytics receives a report with the error, where in the app it happened, the app version and basic device details (such as model and Android version). Crash reports do not include your name, email or reward history.</p>
+    <p>The app also includes Firebase Analytics and Performance Monitoring, which ship switched off and collect data only if the diagnostics preference on your device is turned on. This version of the app does not show a control to turn it on, so they are not collecting data.</p>
   </section>
 
   <section id="notifications">
