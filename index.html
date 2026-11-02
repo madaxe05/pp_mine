@@ -45,7 +45,7 @@
   <header class="card">
     <h1>Privacy Policy</h1>
     <p class="meta"><strong>Minecoin Rewards</strong> · Android package <code>com.madaxe.sohan.minecoins</code></p>
-    <p class="meta">Last updated: October 5, 2026 (advertising added)</p>
+    <p class="meta">Last updated: November 2, 2026 (Firebase Analytics always on)</p>
     <p class="note">This application is an independent application and is not affiliated with, endorsed by, sponsored by, or associated with Mojang Studios or Microsoft. Coins in Minecoin Rewards are reward points that exist only inside this app; they are not any game's official currency.</p>
   </header>
 
@@ -89,7 +89,7 @@
       <li><strong>Advertising information</strong> processed by Google when ads are requested or shown (section 8).</li>
       <li><strong>A notification token</strong>, only if you allow notifications.</li>
       <li><strong>Device integrity signals</strong> from Firebase App Check (Google Play Integrity), which confirm requests come from the genuine app on a real device.</li>
-      <li><strong>Crash reports</strong> through Firebase Crashlytics (error, app version and basic device details), always on, and other diagnostics only if they are switched on (section 9).</li>
+      <li><strong>Crash reports</strong> through Firebase Crashlytics (error, app version and basic device details), always on, and app usage information through Firebase Analytics, always on (section 9).</li>
     </ul>
     <p>The app does not ask for your contacts, precise location, photos, camera or microphone, and it never asks for the password of any game account.</p>
   </section>
@@ -145,6 +145,7 @@
       <li><strong>Firebase Remote Config:</strong> switches features on or off and holds display settings.</li>
       <li><strong>Firebase Cloud Messaging:</strong> delivers updates about your reward requests, only after you allow notifications.</li>
       <li><strong>Firebase Crashlytics:</strong> crash reports, always on.</li>
+      <li><strong>Firebase Analytics:</strong> app usage information, always on.</li>
       <li><strong>Google Sign-In:</strong> if you choose to sign in with Google.</li>
     </ul>
     <p>Google processes this data on our behalf and may store it on servers in other countries.</p>
@@ -167,7 +168,7 @@
   <section id="diagnostics">
     <h2>9. Analytics and diagnostics</h2>
     <p><strong>Crash reports are always on.</strong> When the app crashes or hits an unexpected error, Firebase Crashlytics receives a report with the error, where in the app it happened, the app version and basic device details (such as model and Android version). Crash reports do not include your name, email or reward history.</p>
-    <p>The app also includes Firebase Analytics and Performance Monitoring, which ship switched off and collect data only if the diagnostics preference on your device is turned on. This version of the app does not show a control to turn it on, so they are not collecting data.</p>
+    <p><strong>Firebase Analytics is always on.</strong> It records how the app is used: screens and features opened, app events, app version, basic device details, approximate region, an app instance identifier and, where your device allows it, the advertising ID. It does not receive your name, email or reward history. Firebase Performance Monitoring is included but switched off.</p>
   </section>
 
   <section id="notifications">
